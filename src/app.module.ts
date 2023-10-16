@@ -7,7 +7,10 @@ import { NoteModule } from './note/note.module';
 @Module({
   imports: [
     ConfigModule.forRoot(),
-    MongooseModule.forRoot(process.env.MONGO_URI, {}),
+    MongooseModule.forRoot(
+      'mongodb+srv://admin:aCGVGLcljTEwpMr5@cluster0.aecrutf.mongodb.net/?retryWrites=true&w=majority',
+      {},
+    ),
     NoteModule,
     AuthModule,
   ],

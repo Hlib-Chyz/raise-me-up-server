@@ -11,7 +11,7 @@ async function bootstrap() {
   console.log(3);
   app.useGlobalFilters(new ErrorFilter());
   console.log(4);
-  const port = process.env.port || 4200;
+  const port = 4200;
   console.log(5);
   await app.listen(port);
   console.log(6);
