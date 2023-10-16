@@ -11,10 +11,9 @@ async function bootstrap() {
   console.log(3);
   app.useGlobalFilters(new ErrorFilter());
   console.log(4);
-  await app.listen(process.env.PORT || 3000);
+  const port = 4200;
   console.log(5);
-  console.log('server start on PORT' + process.env.PORT);
+  await app.listen(port);
   console.log(6);
-  console.log(process.env.EMAIL_USER);
 }
 bootstrap();
