@@ -11,7 +11,7 @@ async function bootstrap() {
   console.log(3);
   app.useGlobalFilters(new ErrorFilter());
   console.log(4);
-  await app.listen(process.env.PORT || 3000);
+  await app.listen(8080);
   console.log(5);
 }
 bootstrap();
