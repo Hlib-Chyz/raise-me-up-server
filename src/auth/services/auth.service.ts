@@ -9,7 +9,7 @@ export class AuthService {
   constructor(private userService: UserService) {}
 
   public async signPayload(payload: IPayload): Promise<string> {
-    return sign(payload, process.env.SECRET_KEY, { expiresIn: '60s' });
+    return sign(payload, process.env.SECRET_KEY, { expiresIn: '60m' });
   }
 
   public async validateUser(email: string): Promise<IUser> {
